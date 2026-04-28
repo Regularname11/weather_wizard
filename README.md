@@ -9,6 +9,7 @@ Weather Wizard is a TypeScript + React web app (Next.js App Router) that integra
 - Next.js
 - Sass (CSS Modules)
 - TanStack Query (data fetching/caching)
+- Zod - schema validation (at runtime)
 
 ## Features
 
