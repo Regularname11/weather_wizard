@@ -72,3 +72,6 @@ Set these GitHub repository secrets before deployment:
 ## Deployment
 
 The deployment workflow is configured for Vercel via GitHub Actions. You can also deploy manually with Vercel CLI if needed.
+
+
+#### Live app, CHeck here: https://weather-wizard-58pv72iij-regularname-s-projects.vercel.app/
