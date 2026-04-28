@@ -2,7 +2,7 @@
 
 Weather Wizard is a TypeScript + React web app (Next.js App Router) that integrates with the [Open-Meteo Forecast API](https://api.open-meteo.com/v1/forecast) to search locations and display a clean daily forecast view.
 
-#### Live app, check here: https://weather-wizard-58pv72iij-regularname-s-projects.vercel.app/
+#### **Live app**: check here: https://weather-wizard-58pv72iij-regularname-s-projects.vercel.app/
 
 ## Tech stack
 
@@ -74,5 +74,3 @@ Set these GitHub repository secrets before deployment:
 ## Deployment
 
 The deployment workflow is configured for Vercel via GitHub Actions. You can also deploy manually with Vercel CLI if needed.
-
-
