@@ -43,7 +43,7 @@ export default function Home() {
   return (
     <main className={styles.page}>
       <header className={styles.header}>
-        <h1>Weather Wizard</h1>
+        <h1>Weather Wizard 🧙🏽‍♂️</h1>
         <p>Search locations, switch units, and review up to 10 days of forecast data.</p>
       </header>
 
