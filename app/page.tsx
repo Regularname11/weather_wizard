@@ -4,6 +4,7 @@ import { useMemo, useState } from 'react'
 import styles from './page.module.scss'
 import { useForecast, useLocationSearch } from '@/lib/hooks/use-weather'
 import { WeatherLocation } from '@/lib/types/weather'
+import { useTheme } from '@/lib/theme-provider'
 
 const WEATHER_DESCRIPTIONS: Record<number, string> = {
   0: 'Clear',
@@ -23,6 +24,8 @@ export default function Home() {
   const [selectedLocation, setSelectedLocation] = useState<WeatherLocation | null>(null)
   const [unit, setUnit] = useState<'celsius' | 'fahrenheit'>('celsius')
   const [days, setDays] = useState(5)
+
+  const { theme, toggleTheme } = useTheme()
 
   const locationSearch = useLocationSearch(query)
   const locations = locationSearch.data ?? []
@@ -83,6 +86,13 @@ export default function Home() {
           </select>
 
           <div className={styles.toggles}>
+            <button
+              className={styles.toggleButton}
+              onClick={toggleTheme}
+              type="button"
+            >
+              {theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
+            </button>
             <button
               className={`${styles.toggleButton} ${unit === 'celsius' ? styles.activeToggle : ''}`}
               onClick={() => setUnit('celsius')}

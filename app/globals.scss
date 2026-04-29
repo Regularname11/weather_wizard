@@ -1,5 +1,27 @@
 :root {
-  color-scheme: dark;
+  --bg: #000000;
+  --surface: #121a2b;
+  --surface-soft: #182235;
+  --text: #e6edf7;
+  --muted: #9db0c8;
+  --accent: #5b8cff;
+  --border: #2b3d5a;
+  --danger: #ff7b7b;
+}
+
+:root[data-theme='light'] {
+  --bg: #f5f8ff;
+  --surface: #ffffff;
+  --surface-soft: #f1f5ff;
+  --text: #0f172a;
+  --muted: #475569;
+  --accent: #3366ff;
+  --border: #d6deeb;
+  --danger: #dc2626;
+}
+
+// explicit dark selector (opptional)
+:root[data-theme='dark'] {
   --bg: #000000;
   --surface: #121a2b;
   --surface-soft: #182235;
@@ -26,6 +48,11 @@ body {
   background: radial-gradient(circle at top, #16213a 0%, var(--bg) 55%);
   color: var(--text);
 }
+
+:root[data-theme='light'] body {
+  background: radial-gradient(circle at top, #dbeafe 0%, var(--bg) 60%);
+}
+
 
 a {
   color: inherit;
