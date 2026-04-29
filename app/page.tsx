@@ -5,14 +5,17 @@ import styles from './page.module.scss'
 import { useForecast, useLocationSearch } from '@/lib/hooks/use-weather'
 import { WeatherLocation } from '@/lib/types/weather'
 
+const WEATHER_DESCRIPTIONS: Record<number, string> = {
+  0: 'Clear',
+  1: 'Cloudy', 2: 'Cloudy', 3: 'Cloudy',
+  45: 'Fog', 48: 'Fog',
+  51: 'Rain', 53: 'Rain', 55: 'Rain', 61: 'Rain', 63: 'Rain', 65: 'Rain', 80: 'Rain', 81: 'Rain', 82: 'Rain',
+  71: 'Snow', 73: 'Snow', 75: 'Snow', 85: 'Snow', 86: 'Snow',
+  95: 'Thunderstorm', 96: 'Thunderstorm', 99: 'Thunderstorm',
+};
+
 function weatherCodeToLabel(code: number) {
-  if (code === 0) return 'Clear'
-  if ([1, 2, 3].includes(code)) return 'Cloudy'
-  if ([45, 48].includes(code)) return 'Fog'
-  if ([51, 53, 55, 61, 63, 65, 80, 81, 82].includes(code)) return 'Rain'
-  if ([71, 73, 75, 85, 86].includes(code)) return 'Snow'
-  if ([95, 96, 99].includes(code)) return 'Thunderstorm'
-  return 'Unknown'
+  return WEATHER_DESCRIPTIONS[code] ?? 'Unknown';
 }
 
 export default function Home() {
