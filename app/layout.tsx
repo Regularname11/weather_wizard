@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'Weather Wizard',
   description: 'Search cities and inspect weather forecasts with Open-Meteo',
+  icons: {
+    icon: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({

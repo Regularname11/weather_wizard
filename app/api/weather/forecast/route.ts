@@ -20,8 +20,9 @@ export async function GET(request: NextRequest) {
     latitude: parsed.data.latitude.toString(),
     longitude: parsed.data.longitude.toString(),
     daily:
-      'weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,wind_speed_10m_max',
+      'weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,relative_humidity_2m_mean,wind_speed_10m_max',
     temperature_unit: parsed.data.temperatureUnit,
+    wind_speed_unit: parsed.data.temperatureUnit === 'fahrenheit' ? 'mph' : 'kmh',
     timezone: 'auto',
     forecast_days: parsed.data.days.toString(),
   })

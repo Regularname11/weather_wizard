@@ -14,6 +14,7 @@ export type DailyWeather = {
   temperature_2m_max: number[]
   temperature_2m_min: number[]
   precipitation_probability_max: number[]
+  relative_humidity_2m_mean: number[]
   wind_speed_10m_max: number[]
 }
 

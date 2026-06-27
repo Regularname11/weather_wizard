@@ -18,6 +18,22 @@
   }
 }
 
+.highTemp {
+  color: var(--danger);
+  font-weight: 600;
+}
+.lowTemp {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.emoji {
+  font-size: 23px;
+}
+.emojiTitle {
+  font-size: 40px;
+}
+
 .panel {
   background: var(--surface);
   border: 1px solid var(--border);

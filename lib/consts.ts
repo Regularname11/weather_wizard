@@ -1,0 +1,27 @@
+export const WEATHER_CODES: Record<number, { description: string; emoji: string }> = {
+  0: { description: 'Clear Sky', emoji: '☀️' },
+  1: { description: 'Mainly Sunny', emoji: '🌤️' },
+  2: { description: 'Partly Cloudy', emoji: '⛅' },
+  3: { description: 'Cloudy', emoji: '☁️' },
+  45: { description: 'Foggy', emoji: '🌫️' },
+  48: { description: 'Rime Fog', emoji: '🌫️' },
+  51: { description: 'Light Drizzle', emoji: '🌦️' },
+  53: { description: 'Drizzle', emoji: '🌦️' },
+  55: { description: 'Heavy Drizzle', emoji: '🌧️' },
+  61: { description: 'Light Rain', emoji: '🌧️' },
+  63: { description: 'Rain', emoji: '🌧️' },
+  65: { description: 'Heavy Rain', emoji: '🌧️' },
+  80: { description: 'Light Showers', emoji: '🌦️' },
+  81: { description: 'Showers', emoji: '🌧️' },
+  82: { description: 'Heavy Showers', emoji: '⛈️' },
+  71: { description: 'Light Snow', emoji: '🌨️' },
+  73: { description: 'Snow', emoji: '❄️' },
+  75: { description: 'Heavy Snow', emoji: '❄️' },
+  85: { description: 'Light Snow Showers', emoji: '🌨️' },
+  86: { description: 'Snow Showers', emoji: '❄️' },
+  95: { description: 'Thunderstorm', emoji: '⛈️' },
+  96: { description: 'Light Thunderstorm with Hail', emoji: '⛈️' },
+  99: { description: 'Thunderstorm with Hail', emoji: '⛈️' },
+}
+
+export const FIVE_MINUTES = 1000 * 60 * 5
