@@ -40,7 +40,6 @@ export default function Home() {
     <main className={styles.page}>
       <header className={styles.header}>
         <h1>
-          <Sun />
           Weather Wizard <span className={styles.emojiTitle}>🧙🏽‍♂️</span>
         </h1>
         <p>Search locations, switch units, and review up to 10 days of forecast.</p>
