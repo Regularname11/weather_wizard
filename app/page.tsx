@@ -8,7 +8,7 @@ import { useTheme } from '@/lib/theme-provider'
 import { weatherCodeToLabel } from '@/lib/utils'
 
 export default function Home() {
-  const [query, setQuery] = useState('Helsinki')
+  const [query, setQuery] = useState('Hämeenlinna')
   const [selectedLocation, setSelectedLocation] = useState<WeatherLocation | null>(null)
   const [unit, setUnit] = useState<'celsius' | 'fahrenheit'>('celsius')
   const [days, setDays] = useState(5)
