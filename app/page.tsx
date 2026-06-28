@@ -5,11 +5,8 @@ import styles from './page.module.scss'
 import { useForecast, useLocationSearch } from '@/lib/hooks/use-weather'
 import { WeatherLocation } from '@/lib/types/weather'
 import { useTheme } from '@/lib/theme-provider'
-import { WEATHER_CODES } from '@/lib/consts'
-
-function weatherCodeToLabel(code: number) {
-  return WEATHER_CODES[code] ?? { description: 'Unknown', emoji: '🌡️' }
-}
+import { Sun } from 'lucide-react'
+import { weatherCodeToLabel } from '@/lib/utils'
 
 export default function Home() {
   const [query, setQuery] = useState('Helsinki')
@@ -43,6 +40,7 @@ export default function Home() {
     <main className={styles.page}>
       <header className={styles.header}>
         <h1>
+          <Sun />
           Weather Wizard <span className={styles.emojiTitle}>🧙🏽‍♂️</span>
         </h1>
         <p>Search locations, switch units, and review up to 10 days of forecast.</p>
