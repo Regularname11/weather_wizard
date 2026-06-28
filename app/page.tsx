@@ -5,7 +5,6 @@ import styles from './page.module.scss'
 import { useForecast, useLocationSearch } from '@/lib/hooks/use-weather'
 import { WeatherLocation } from '@/lib/types/weather'
 import { useTheme } from '@/lib/theme-provider'
-import { Sun } from 'lucide-react'
 import { weatherCodeToLabel } from '@/lib/utils'
 
 export default function Home() {
